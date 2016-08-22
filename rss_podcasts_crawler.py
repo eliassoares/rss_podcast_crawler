@@ -56,6 +56,6 @@ def get_podcast_information(rss_link):
 					f.write("Erro: Sem link de Download\t" + epi.title.text + "\n")
 		return podcast
 
-
-podcast = get_podcast_information('http://www.portalcafebrasil.com.br/todos/podcasts/feed/')
+link = 'http://www.portalcafebrasil.com.br/todos/podcasts/feed/'
+podcast = get_podcast_information(link)
 if podcast : download_episodes(podcast)
